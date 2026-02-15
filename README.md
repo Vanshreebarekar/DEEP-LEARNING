@@ -1,14 +1,53 @@
-# UNET
-🚀 Exciting Milestone: Completed Image Segmentation Project using U-Net!
+# 🧬 Biomedical Image Segmentation using U-Net
 
-📌 Project Overview
-This repository contains a high-precision implementation of the U-Net architecture designed for biomedical image segmentation. The model is specifically optimized to automate the detection of cells and tissues in microscopic imagery, reducing manual annotation time for researchers.
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0+-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-🧠 Architecture Deep Dive
-## The U-Net model is a Convolutional Neural Network (CNN) characterized by its symmetric "U" shape:
+## 🚀 Project Overview
+This repository features a high-precision implementation of the **U-Net architecture** tailored for biomedical image segmentation. The primary goal is to automate the detection of cells and tissues in microscopic imagery, significantly reducing the manual annotation bottleneck for researchers and medical professionals.
 
-## Contracting Path (Encoder): Captures context through downsampling and feature extraction.
+---
 
-## Expansive Path (Decoder): Enables precise localization through upsampling.
+## 🧠 Architecture Deep Dive
+The U-Net model is a Convolutional Neural Network (CNN) characterized by its symmetric "U" shape, designed to work with fewer training images while yielding high-precision masks.
 
-## Skip Connections: Links the encoder and decoder to preserve spatial information and fine-grained details that are often lost during pooling.
+* **Contracting Path (Encoder):** Extracts deep features and captures global context through successive convolutions and max-pooling layers.
+* **Expansive Path (Decoder):** Recovers spatial resolution through upsampling (transposed convolutions), enabling precise pixel-level localization.
+* **Skip Connections:** The "secret sauce" that concatenates high-resolution features from the encoder directly to the decoder, preserving fine-grained details lost during downsampling.
+
+### Mathematical Representation
+The final feature map integration can be represented as:
+$$O = \sigma(W \cdot [X_{up} ; X_{skip}] + b)$$
+*Where $[X_{up} ; X_{skip}]$ denotes the concatenation of upsampled and encoder features.*
+
+---
+
+## 🛠️ Project Highlights & Tech Stack
+* **Goal:** Automate cell & tissue detection in microscopic imagery. 🎯
+* **Frameworks:** Built with **TensorFlow/Keras** using `Conv2D`, `MaxPooling2D`, and `UpSampling2D`.
+* **Training:** Optimized over **200 epochs** using Adam optimizer and Binary Cross-Entropy loss.
+* **Tools:** * **NumPy:** For advanced array manipulation.
+    * **Matplotlib:** For visualizing segmentation masks vs. ground truth.
+    * **Jupyter:** For interactive development and documentation.
+
+---
+
+## 📈 Results & Impact
+| Metric | Value |
+| :--- | :--- |
+| **Training Epochs** | 200 |
+| **Loss Function** | Binary Cross-Entropy / Dice Loss |
+| **Primary Use Case** | HealthTech / Pathology Automation |
+
+**The Impact:** AI-driven segmentation saves hours of manual lab work, helping doctors and researchers identify cellular structures with higher consistency and speed.
+
+---
+
+## 📂 Repository Structure
+```text
+├── data/               # Raw and augmented biological datasets
+├── notebooks/          # U-Net_Implementation.ipynb
+├── models/             # Saved model weights (.h5 format)
+├── outputs/            # Generated segmentation masks
+└── README.md           # Project Documentation
