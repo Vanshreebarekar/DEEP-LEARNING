@@ -24,10 +24,12 @@ CNNs are a special kind of neural network used primarily in computer vision and 
 
 * *Fun Fact:* In 2015, a CNN bested a human in an object recognition challenge for the first time.
 
+* <img width="395" height="127" alt="cnn" src="https://github.com/user-attachments/assets/253b38c2-0a4b-4498-9944-edf263f05844" />
+
 ### 2. 🔄 Recurrent Neural Network (RNN)
 RNNs are typically used in natural language processing (NLP) and speech recognition applications as they leverage sequential or time-series data.
 
----
+---<img width="327" height="154" alt="rnn" src="https://github.com/user-attachments/assets/93690ab7-8b64-42ae-a7cf-9493e4722ab0" />
 
 ## 🌐 Real-World Applications
 
