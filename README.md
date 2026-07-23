@@ -1,4 +1,7 @@
 <img width="341" height="148" alt="deep" src="https://github.com/user-attachments/assets/d2c807a1-3c07-4fa4-bb6d-db51039db91c" />
+
+
+
 # 🧠 Deep Learning: Fundamentals, Architectures & Applications
 
 > 💡 **Overview:** Deep Learning (DL) is a transformative subset of Machine Learning that leverages multi-layered artificial neural networks to mimic human cognitive processes. By processing vast datasets without requiring manual feature engineering, DL enables high-accuracy predictive modeling across computer vision, natural language processing, and advanced analytics.
